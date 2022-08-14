@@ -13,48 +13,49 @@
     <body background="texturas/nebula360.jpg">
         <x3d>
             <scene>
-                <transform DEF="SSolar">
+                <transform DEF="SSolar" rotation='1 0 1 -0.4'>
                     <shape>
                         <appearance>
-                            <imageTexture url='texturas/csol.jpg' />
+                            <material diffuseColor='1 1 0'></material>
+                            <imageTexture url="solar/texturas/csol.jpg" />
                         </appearance>
                         <sphere />
                     </shape>
                     <!--mercurio-->
-                    <transform translation="0 0 1.5" scale="0.2 0.2 0.2">
-                        <inline url="mercurio.x3d"></inline>
+                    <transform scale='0.09 0.09 0.09' translation='1.75 0 0'>
+                        <inline url="solar/mercurio.x3d"></inline>
                     </transform>
                     <!--venus-->
-                    <transform translation="-0.5 0 3" scale="0.3 0.3 0.3">
-                        <inline url="venus.x3d"></inline>
+                    <transform scale='0.15 0.15 0.15' translation='-2 0 -2'>
+                        <inline url="solar/venus.x3d"></inline>
                     </transform>
                     <!--tierra-->
-                    <transform translation="1 0 4.5" scale="0.5 0.5 0.5">
-                        <inline url="tierra.x3d"></inline>
+                    <transform scale='0.2 0.2 0.2' translation='3 0 3'>
+                        <inline url="solar/tierra.x3d"></inline>
                     </transform>
                     <!--luna-->
-                    <transform translation="0.3 0 4" scale="-0.1 -0.1 -0.1">
-                        <inline url="luna.x3d"></inline>
+                    <transform scale="-0.06 -0.06 -0.06" translation="3.4 0 3">
+                        <inline url="solar/luna.x3d"></inline>
                     </transform>
                     <!--marte-->
-                    <transform translation="0.3 0 6" scale="0.3 0.3 0.3">
-                        <inline url="marte.x3d"></inline>
+                    <transform scale='0.15 0.15 0.15' translation='-5 0 0'>
+                        <inline url="solar/marte.x3d"></inline>
                     </transform>
                     <!--jupiter-->
-                    <transform translation="1.5 0 7.5" scale="0.5 0.5 0.5">
-                        <inline url="jupiter.x3d"></inline>
+                    <transform scale='0.6 0.6 0.6' translation='-7 0 -8'>
+                        <inline url="solar/jupiter.x3d"></inline>
                     </transform>
                     <!--saturno-->
-                    <transform translation="0 0 9" scale="0.3 0.3 0.3">
-                        <inline url="saturno.x3d"></inline>
+                    <transform scale='0.5 0.5 0.5' translation='-12 0 12'>
+                        <inline url="solar/saturno.x3d"></inline>
                     </transform>
                     <!--urano-->
-                    <transform translation="1 0 10.5" scale="0.3 0.3 0.3">
-                        <inline url="urano.x3d"></inline>
+                    <transform scale='0.3 0.3 0.3' translation='11 0 12'>
+                        <inline url="solar/urano.x3d"></inline>
                     </transform>
                     <!--neptuno-->
-                    <transform translation="0 0 12" scale="0.2 0.2 0.2">
-                        <inline url="neptuno.x3d"></inline>
+                    <transform scale='0.15 0.15 0.15' translation='12 0 -12'>
+                        <inline url="solar/neptuno.x3d"></inline>
                     </transform>
                     <!-- Parámetros de animación: sensor de tiempo y cuál eje se animará -->
                     <timeSensor DEF='timer' cycleInterval='10' loop='true'></timeSensor>
