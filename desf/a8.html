@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <!--
+        - Roxy: Bootstrap template by GettTemplates.com
+        - https://gettemplates.co/roxy
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Desarrollo de Aplicaciones Multimedia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="DES">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar" class="static-layout">
+        <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center text-white" href="index.html">
+                    <h3 class="font-weight-bolder mb-0">Desarrollo de Aplicaciones Multimedia</h3>
+                </a>
+            </div>
+        </nav>
+
+        <a-scene>
+            <a-assets>
+                <img id="tour1" src="equirectangular/puestos.jpg" />
+                <img id="b1" src="equirectangular/puestos-b.jpg" />
+                <img id="tour2" src="equirectangular/estacion.jpg" />
+                <img id="b2" src="equirectangular/estacion-b.jpg" />
+                <img id="tour3" src="equirectangular/estacionamiento.jpg" />
+                <img id="b3" src="equirectangular/estacionamiento-b.jpg" />
+            </a-assets>
+            <a-image src="#b1" position="1 1.5 -5" onclick="show('tour1')"></a-image>
+            <a-image src="#b2" position="2.5 1.5 -5" onclick="show('tour2')"></a-image>>
+            <a-image src="#b3" position="4 1.5 -5" onclick="show('tour3')"></a-image>>
+
+            <a-sky src="#tour1" id="sky"></a-sky>
+
+            <a-camera>
+                <a-cursor color="white"></a-cursor>
+            </a-camera>
+        </a-scene>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="vendor/bootstrap/popper.min.js"></script>
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="vendor/select2/select2.min.js "></script>
+        <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+        <script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+        <script src="vendor/isotope/isotope.min.js"></script>
+        <script src="vendor/lightcase/lightcase.js"></script>
+        <script src="vendor/waypoints/waypoint.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Main JS -->
+        <script src="js/app.min.js "></script>
+        <script src="//localhost:35729/livereload.js"></script>
+    </body>
+
+</html>
